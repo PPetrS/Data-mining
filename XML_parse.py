@@ -1,6 +1,9 @@
 import xml.etree.ElementTree as ET
 import csv
 
+# Definice jmenného prostoru
+namespace = {'ns': 'http://seznam.gov.cz/ovm/datafile/seznam_ds/v1'}
+
 # Open xml file
 tree = ET.parse('nazev_xml_souboru.xml')
 root = tree.getroot()
