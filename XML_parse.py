@@ -5,7 +5,7 @@ import csv
 tree = ET.parse('nazev_xml_souboru.xml')
 root = tree.getroot()
 
-# Otevření CSV souboru pro zápis
+# Open CSV file to write
 with open('vystupni_csv_soubor.csv', 'w', newline='', encoding='utf-8') as csvfile:
 # Vytvoření objektu pro zápis do CSV
 csvwriter = csv.writer(csvfile)
