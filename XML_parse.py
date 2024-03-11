@@ -9,3 +9,7 @@ root = tree.getroot()
 with open('vystupni_csv_soubor.csv', 'w', newline='', encoding='utf-8') as csvfile:
 # Vytvoření objektu pro zápis do CSV
 csvwriter = csv.writer(csvfile)
+
+# Writing CSV file header
+csvwriter.writerow(['id', 'type', 'subtype', 'firstName', 'lastName', 'tradeName', 'ico', 'city', 
+                        'district', 'street', 'cp', 'co', 'zip', 'addressPoint', 'state', 'pdz', 'ovm', 'isMaster', 'idOVM'])
